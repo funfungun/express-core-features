@@ -1,2 +1,28 @@
 ###
 GET http://localhost:3000
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "id": "mark",
+  "password": "mark123"
+}
+
+###
+GET http://localhost:3000/products/2
+
+###
+GET http://localhost:3000products/2/reviews
+
+###
+POST http://localhost:3000/files
+Content-Type: multipart/form-data; boundary=Boundary01234567890123456789
+
+--Boundary01234567890123456789
+Content-Disposition: form-data; name="attachment"; filename="hello.txt"
+Content-Type: text/plain
+
+Hello!
+--Boundary01234567890123456789--w
